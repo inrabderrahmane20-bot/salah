@@ -254,7 +254,7 @@ export const dict = {
     },
     placeholder: "صورة — تُضاف لاحقاً",
   },
-} as const;
+};
 
 type Dict = (typeof dict)["fr"];
 
