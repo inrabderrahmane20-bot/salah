@@ -18,6 +18,7 @@ export const dict = {
   fr: {
     dir: "ltr",
     nav: {
+      home: "Accueil",
       story: "Notre maison",
       products: "Produits",
       quality: "Qualité & logistique",
@@ -25,6 +26,39 @@ export const dict = {
       contact: "Contact",
       login: "Connexion pro",
       cta: "Devenir partenaire",
+    },
+    home: {
+      indexEyebrow: "Explorer la maison",
+      indexTitle: "Une maison,\nchapitre par chapitre.",
+      indexLead:
+        "Découvrez HML Distribution à travers ses pages : notre histoire, nos produits, notre logistique et l’espace réservé aux professionnels.",
+      chapters: {
+        story: "L’histoire, les fermes partenaires et l’exigence qui nous fonde.",
+        products: "Volaille fraîche et œufs, présentés comme un catalogue.",
+        quality: "Chaîne du froid, sécurité alimentaire et traçabilité.",
+        pro: "Un espace dédié aux restaurants, hôtels et collectivités.",
+        contact: "Construisons ensemble votre approvisionnement.",
+      },
+    },
+    outro: {
+      eyebrow: "Continuer la lecture",
+      back: "Retour à l’accueil",
+    },
+    form: {
+      title: "Écrivez-nous",
+      name: "Nom complet",
+      company: "Société",
+      email: "Adresse e-mail",
+      phone: "Téléphone",
+      subject: "Vous êtes",
+      subjectPro: "Un professionnel",
+      subjectPrivate: "Un particulier",
+      message: "Votre message",
+      submit: "Envoyer la demande",
+      sending: "Envoi en cours…",
+      success: "Merci. Votre demande nous est parvenue — nous vous recontactons rapidement.",
+      error: "Merci de renseigner votre nom, un e-mail valide et un message.",
+      required: "Requis",
     },
     hero: {
       eyebrow: "Distribution alimentaire · Maroc",
@@ -138,6 +172,7 @@ export const dict = {
   ar: {
     dir: "rtl",
     nav: {
+      home: "الرئيسية",
       story: "بيتنا",
       products: "المنتجات",
       quality: "الجودة واللوجستيك",
@@ -145,6 +180,39 @@ export const dict = {
       contact: "اتصل بنا",
       login: "دخول المهنيين",
       cta: "كن شريكاً",
+    },
+    home: {
+      indexEyebrow: "استكشف البيت",
+      indexTitle: "بيتٌ،\nفصلاً بعد فصل.",
+      indexLead:
+        "اكتشف HML Distribution عبر صفحاتها: حكايتنا، ومنتجاتنا، ولوجستيكنا، والفضاء المخصّص للمهنيين.",
+      chapters: {
+        story: "الحكاية، والمزارع الشريكة، والإتقان الذي نقوم عليه.",
+        products: "دواجن طازجة وبيض، معروضة كتشكيلة راقية.",
+        quality: "سلسلة التبريد، وسلامة الغذاء، والتتبّع.",
+        pro: "فضاء مخصّص للمطاعم والفنادق والمؤسسات.",
+        contact: "لنبنِ معاً حلّ تموينك.",
+      },
+    },
+    outro: {
+      eyebrow: "تابع القراءة",
+      back: "العودة إلى الرئيسية",
+    },
+    form: {
+      title: "راسلنا",
+      name: "الاسم الكامل",
+      company: "الشركة",
+      email: "البريد الإلكتروني",
+      phone: "الهاتف",
+      subject: "أنت",
+      subjectPro: "مهني",
+      subjectPrivate: "فرد",
+      message: "رسالتك",
+      submit: "إرسال الطلب",
+      sending: "جارٍ الإرسال…",
+      success: "شكراً لك. وصلنا طلبك — سنعاود الاتصال بك قريباً.",
+      error: "يرجى إدخال اسمك وبريد إلكتروني صحيح ورسالتك.",
+      required: "مطلوب",
     },
     hero: {
       eyebrow: "توزيع المواد الغذائية · المغرب",

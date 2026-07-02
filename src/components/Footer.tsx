@@ -1,18 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
+import { routes } from "@/lib/routes";
 import { Logo } from "./Logo";
 
 export function Footer() {
   const { t } = useI18n();
   const year = new Date().getFullYear();
-
-  const explore = [
-    { id: "story", label: t.nav.story },
-    { id: "products", label: t.nav.products },
-    { id: "quality", label: t.nav.quality },
-    { id: "pro", label: t.nav.pro },
-  ];
 
   return (
     <footer className="bg-forest-900 text-cream">
@@ -20,7 +15,9 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-12">
           {/* Brand */}
           <div className="md:col-span-5">
-            <Logo variant="dark" width={140} />
+            <Link href="/" aria-label="HML Distribution — accueil">
+              <Logo variant="dark" width={140} />
+            </Link>
             <p className="measure mt-6 text-[1rem] leading-relaxed text-cream-soft">
               {t.footer.tagline}
             </p>
@@ -32,14 +29,14 @@ export function Footer() {
               {t.footer.explore}
             </h3>
             <ul className="mt-5 flex flex-col gap-3">
-              {explore.map((l) => (
-                <li key={l.id}>
-                  <a
-                    href={`#${l.id}`}
+              {routes.map((r) => (
+                <li key={r.key}>
+                  <Link
+                    href={r.path}
                     className="text-[0.98rem] text-cream/85 transition-colors duration-300 hover:text-cream"
                   >
-                    {l.label}
-                  </a>
+                    {t.nav[r.key]}
+                  </Link>
                 </li>
               ))}
             </ul>

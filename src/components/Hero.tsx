@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
-import { Logo } from "./Logo";
 import { IconArrow, IconArrowDown } from "./icons";
 
 const glide = [0.22, 1, 0.36, 1] as const;
@@ -53,15 +53,6 @@ export function Hero() {
       {/* Content */}
       <div className="shell relative z-10 flex min-h-[100svh] flex-col justify-center pt-28 pb-24">
         <div className="max-w-3xl">
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, ease: glide, delay: 0.15 }}
-            className="mb-8 hidden sm:block"
-          >
-            <Logo variant="dark" width={150} priority />
-          </motion.div>
-
           <motion.p
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
@@ -100,13 +91,13 @@ export function Hero() {
             transition={{ duration: 0.9, ease: glide, delay: 0.85 }}
             className="mt-10 flex flex-col items-stretch gap-3.5 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4"
           >
-            <a href="#products" className="btn btn-light w-full sm:w-auto">
+            <Link href="/produits" className="btn btn-light w-full sm:w-auto">
               {t.hero.primary}
               <IconArrow className="rtl:rotate-180" />
-            </a>
-            <a href="#pro" className="btn btn-outline-light w-full sm:w-auto">
+            </Link>
+            <Link href="/espace-pro" className="btn btn-outline-light w-full sm:w-auto">
               {t.hero.secondary}
-            </a>
+            </Link>
           </motion.div>
         </div>
       </div>
@@ -133,7 +124,7 @@ export function Hero() {
             ))}
           </ul>
           <a
-            href="#story"
+            href="#index"
             aria-label={t.hero.scroll}
             className="group flex items-center gap-2 text-[0.7rem] font-medium uppercase tracking-[0.18em] text-cream/70 transition-colors hover:text-cream"
           >

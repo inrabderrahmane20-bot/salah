@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
 import { Reveal, RevealGroup, Item } from "./motion";
 import { SectionMark } from "./SectionMark";
@@ -46,13 +47,13 @@ export function ProSpace() {
             </Reveal>
             <Reveal delay={0.15}>
               <div className="mt-10 flex flex-col items-stretch gap-3.5 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
-                <a href="#contact" className="btn btn-light w-full sm:w-auto">
+                <Link href="/contact" className="btn btn-light w-full sm:w-auto">
                   {t.pro.cta}
                   <IconArrow className="rtl:rotate-180" />
-                </a>
-                <a href="#contact" className="btn btn-outline-light w-full sm:w-auto">
+                </Link>
+                <Link href="/contact" className="btn btn-outline-light w-full sm:w-auto">
                   {t.pro.login}
-                </a>
+                </Link>
               </div>
             </Reveal>
           </div>
